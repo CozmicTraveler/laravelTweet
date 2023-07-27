@@ -32,7 +32,7 @@ class TweetServiceTest extends TestCase
     public function test_check_own_tweet(): void
     {
         $mock = Mockery::mock('alias:App\Models\Tweet');
-        $mock->shouldReceive('where->first')->andReturn((object)[
+        $mock->shouldReceive('where->first')->andREturn((object)[
             'id' => 1,
             'user_id' => 1
         ]);
